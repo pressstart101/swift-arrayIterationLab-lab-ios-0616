@@ -15,6 +15,7 @@
  */
 // write your code here
 
+var arr: [String] = ["Chips", "Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -25,6 +26,8 @@
  */
 // write your code here
 
+
+let numberArray: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 
@@ -38,7 +41,9 @@
 
 
 
-
+for number in numberArray{
+    print(number)
+}
 
 
 
@@ -49,7 +54,9 @@
 
 
 
-
+for item in arr {
+print("darth vader loves: \(item)")
+}
 
 
 
@@ -59,10 +66,14 @@
 // write your code here
 
 
+func stuff(items:Array <String>){
+    for item in items {
+        print (item)
+    }
+}
 
 
-
-
+stuff(arr)
 
 /*: question6
  ### 4. Create a function that takes an array of names and greets each person with the following message "Good morning x" <- x being the individuals name. One caveat. If the persons first name is Michael, we want to greet them with the message, "Top of the morning Michael!".
@@ -70,7 +81,16 @@
 // write your code here
 
 
+func stuffWithNames(list: Array<String>) {
+    for name in list {
+        if name == "Michael" {
+            print("Why does \(name) get a special greeting?")
+        }else{
+            print("Good morning \(name)")
+        }
+    }
 
+}
 
 
 
@@ -79,9 +99,19 @@
  */
 // write your code here
 
+let arr3: [Int] = [40, 60, 50, 52, 59, 13, 90, 100, 5, 52, 51, 49]
+            var newArr: [Int] = []
 
+func numberSort(numbers: Array<Int>) -> Array<Int> {
+    for number in numbers {
+        if number < 50 {
 
-
+            newArr.append(number)
+            
+        }
+    }
+    return newArr
+}
 
 
 
